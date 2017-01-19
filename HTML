@@ -1,4 +1,4 @@
-<!-- ED4 Character Sheet v1.0 Last update: 01-18-2017
+<!-- ED4 Character Sheet v1.0 Last update: 01-19-2017
 Author: Dougansf -->
 <table style="width: 720px; height: 50px; background-color: #FFFFFF;" border="5" cellpadding="3">
 	<!-- Char info -->
@@ -104,7 +104,8 @@ Author: Dougansf -->
 --format|blue
 --titlefont|arial
 --titlefontsize|16px
---bodyfontsize|12px--charid|@{character_id}
+--bodyfontsize|12px
+--charid|@{character_id}
 --name|**@{Name} Karma**
 --Step|[[ ?{Karma #|0} ]] Karma
 --Rolled|** [[ ?{Karma #}d@{KarmaDie}! ]] **}}
@@ -157,7 +158,8 @@ Author: Dougansf -->
 --bodyfontsize|12px
 --charid|@{character_id}
 --name|**@{Name} Initiative**
---Step|[[ ?{Step|@{DexStep}+@{DexMod}+@{InitMod}-@{ArmorMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain--Rolled|[[ [TRKR] [[{1e3, 14}&lt;[[(?{Step}) % 22]] + floor((?{Step}) / 22)]]d20! + [[{0, 1, 1, 2, 6, 10}=[[(?{Step}) % 11]] - {-1, 1}&gt;[[?{Step}]] + floor((?{Step} - 3) / 22)]]d10! + [[{0, 5, 9}=[[(?{Step}) % 11]] + {-1, 2}&gt;[[?{Step}]] + floor((?{Step} - 3) / 22)]]d8! + [[{-1, 8}=[[(?{Step}) % 11]] - {0, 1, 5, 6}=[[(?{Step}) % 11]] + {0, 1}=[[?{Step}]] + 1]]d[[4 + 2 * {4, 8, 9, 10}=[[(?{Step}) % 11]] + 8 * ({2, 7}=[[(?{Step}) % 11]] * (1 - {-1, 2}=[[?{Step}]]))]]! - [[{-1, 2}&gt;[[?{Step}]] * (3 - (?{Step}))]] + ?{Karma #}d6! ]]}}
+--Step|[[ ?{Step|@{DexStep}+@{DexMod}+@{InitMod}-@{ArmorMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
+--Rolled|[[ [TRKR] [[{1e3, 14}&lt;[[(?{Step}) % 22]] + floor((?{Step}) / 22)]]d20! + [[{0, 1, 1, 2, 6, 10}=[[(?{Step}) % 11]] - {-1, 1}&gt;[[?{Step}]] + floor((?{Step} - 3) / 22)]]d10! + [[{0, 5, 9}=[[(?{Step}) % 11]] + {-1, 2}&gt;[[?{Step}]] + floor((?{Step} - 3) / 22)]]d8! + [[{-1, 8}=[[(?{Step}) % 11]] - {0, 1, 5, 6}=[[(?{Step}) % 11]] + {0, 1}=[[?{Step}]] + 1]]d[[4 + 2 * {4, 8, 9, 10}=[[(?{Step}) % 11]] + 8 * ({2, 7}=[[(?{Step}) % 11]] * (1 - {-1, 2}=[[?{Step}]]))]]! - [[{-1, 2}&gt;[[?{Step}]] * (3 - (?{Step}))]] + ?{Karma #}d6! ]]}}
 !ammo @{character_id} Karma -?{Karma #}
 !ammo @{character_id} Uncon ?{Strain #}">
 						</button>
@@ -184,7 +186,10 @@ Author: Dougansf -->
 --titlefont|arial
 --titlefontsize|16px
 --bodyfontsize|12px
---charid|@{character_id}--name|**@{Name} Resist Knockdown**--Step|[[ ?{Step|@{StrStep}+@{StrMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain--Rolled|**[[ [[{1e3, 14}&lt;[[(?{Step}) % 22]] + floor((?{Step}) / 22)]]d20! + [[{0, 1, 1, 2, 6, 10}=[[(?{Step}) % 11]] - {-1, 1}&gt;[[?{Step}]] + floor((?{Step} - 3) / 22)]]d10! + [[{0, 5, 9}=[[(?{Step}) % 11]] + {-1, 2}&gt;[[?{Step}]] + floor((?{Step} - 3) / 22)]]d8! + [[{-1, 8}=[[(?{Step}) % 11]] - {0, 1, 5, 6}=[[(?{Step}) % 11]] + {0, 1}=[[?{Step}]] + 1]]d[[4 + 2 * {4, 8, 9, 10}=[[(?{Step}) % 11]] + 8 * ({2, 7}=[[(?{Step}) % 11]] * (1 - {-1, 2}=[[?{Step}]]))]]! - [[{-1, 2}&gt;[[?{Step}]] * (3 - (?{Step}))]] + ?{Karma #}d@{KarmaDie}! ]]**}}
+--charid|@{character_id}
+--name|**@{Name} Resist Knockdown**
+--Step|[[ ?{Step|@{StrStep}+@{StrMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
+--Rolled|**[[ [[{1e3, 14}&lt;[[(?{Step}) % 22]] + floor((?{Step}) / 22)]]d20! + [[{0, 1, 1, 2, 6, 10}=[[(?{Step}) % 11]] - {-1, 1}&gt;[[?{Step}]] + floor((?{Step} - 3) / 22)]]d10! + [[{0, 5, 9}=[[(?{Step}) % 11]] + {-1, 2}&gt;[[?{Step}]] + floor((?{Step} - 3) / 22)]]d8! + [[{-1, 8}=[[(?{Step}) % 11]] - {0, 1, 5, 6}=[[(?{Step}) % 11]] + {0, 1}=[[?{Step}]] + 1]]d[[4 + 2 * {4, 8, 9, 10}=[[(?{Step}) % 11]] + 8 * ({2, 7}=[[(?{Step}) % 11]] * (1 - {-1, 2}=[[?{Step}]]))]]! - [[{-1, 2}&gt;[[?{Step}]] * (3 - (?{Step}))]] + ?{Karma #}d@{KarmaDie}! ]]**}}
 !ammo @{character_id} Karma -?{Karma #}
 !ammo @{character_id} Uncon ?{Strain #}">
 					</button>
@@ -284,7 +289,8 @@ Author: Dougansf -->
 --titlefont|arial
 --titlefontsize|16px
 --bodyfontsize|12px
---charid|@{character_id}--name|**@{Name} Dexterity**
+--charid|@{character_id}
+--name|**@{Name} Dexterity**
 --Step|[[ ?{Step|@{DexStep}+@{DexMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
 --Rolled|**[[ [[{1e3, 14}<[[(?{Step}) % 22]] + floor((?{Step}) / 22)]]d20! + [[{0, 1, 1, 2, 6, 10}=[[(?{Step}) % 11]] - {-1, 1}>[[?{Step}]] + floor((?{Step} - 3) / 22)]]d10! + [[{0, 5, 9}=[[(?{Step}) % 11]] + {-1, 2}>[[?{Step}]] + floor((?{Step} - 3) / 22)]]d8! + [[{-1, 8}=[[(?{Step}) % 11]] - {0, 1, 5, 6}=[[(?{Step}) % 11]] + {0, 1}=[[?{Step}]] + 1]]d[[4 + 2 * {4, 8, 9, 10}=[[(?{Step}) % 11]] + 8 * ({2, 7}=[[(?{Step}) % 11]] * (1 - {-1, 2}=[[?{Step}]]))]]! - [[{-1, 2}>[[?{Step}]] * (3 - (?{Step}))]] + ?{Karma #}d@{KarmaDie}! ]]**}}
 !ammo @{character_id} Karma -?{Karma #}
@@ -689,10 +695,10 @@ Author: Dougansf -->
 						</strong>
 					</td>
 					<td style="text-align: center;">
-						<input name="attr_Recovery_max" type="number" value="2"/>
+						<input name="attr_Recovery_max" type="number" value="1"/>
 					</td>
 					<td style="text-align: center;">
-						<input name="attr_Recovery" type="number" value="2"/>
+						<input name="attr_Recovery" type="number" value="1"/>
 					</td>
 					<td style="text-align: center; vertical-align: bottom;">
                         <select class="RecoveryKarma" name="attr_RecoveryKarma" style= "width: 55px;">
@@ -710,7 +716,8 @@ Author: Dougansf -->
 --format|red
 --titlefont|arial
 --titlefontsize|16px
---bodyfontsize|12px--charid|@{character_id}
+--bodyfontsize|12px
+--charid|@{character_id}
 --name|**@{Name} Recovery**
 --Step|[[ ?{Step|@{TouStep}+@{TouMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
 --Rolled|**[[ [[{1e3, 14}<[[(?{Step}) % 22]] + floor((?{Step}) / 22)]]d20! + [[{0, 1, 1, 2, 6, 10}=[[(?{Step}) % 11]] - {-1, 1}>[[?{Step}]] + floor((?{Step} - 3) / 22)]]d10! + [[{0, 5, 9}=[[(?{Step}) % 11]] + {-1, 2}>[[?{Step}]] + floor((?{Step} - 3) / 22)]]d8! + [[{-1, 8}=[[(?{Step}) % 11]] - {0, 1, 5, 6}=[[(?{Step}) % 11]] + {0, 1}=[[?{Step}]] + 1]]d[[4 + 2 * {4, 8, 9, 10}=[[(?{Step}) % 11]] + 8 * ({2, 7}=[[(?{Step}) % 11]] * (1 - {-1, 2}=[[?{Step}]]))]]! - [[{-1, 2}>[[?{Step}]] * (3 - (?{Step}))]] + ?{Karma #}d@{KarmaDie}! ]] **}}
@@ -981,7 +988,7 @@ Author: Dougansf -->
 						    Public / GM Only
 							<span style="background-color: #ff0000;">
 								<button name="roll_SkillStep" type="roll" value="!power {{
---format|gold
+--format|green
 --titlefont|arial
 --titlefontsize|16px
 --bodyfontsize|12px
@@ -1001,7 +1008,7 @@ Author: Dougansf -->
 							<span style="background-color: #f4c542;">
 								<button name="roll_SkillStepGM" type="roll" value="!power {{
 --whisper|GM
---format|gold
+--format|green
 --titlefont|arial
 --titlefontsize|16px
 --bodyfontsize|12px
