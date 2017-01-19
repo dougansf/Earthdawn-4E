@@ -1252,7 +1252,8 @@ Ranged Weapons
 --titlefontsize|16px
 --bodyfontsize|12px
 --charid|@{character_id}
---name|**@{Name} @{WeaponName} Attack**
+--name|**@{Name} @{WeaponName}**
+--leftsub|Attack
 --Step|[[ ?{Step|@{AtkStep}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
 --Rolled|**[[ [[{1e3, 14}<[[(?{Step}) % 22]] + floor((?{Step}) / 22)]]d20! + [[{0, 1, 1, 2, 6, 10}=[[(?{Step}) % 11]] - {-1, 1}>[[?{Step}]] + floor((?{Step} - 3) / 22)]]d10! + [[{0, 5, 9}=[[(?{Step}) % 11]] + {-1, 2}>[[?{Step}]] + floor((?{Step} - 3) / 22)]]d8! + [[{-1, 8}=[[(?{Step}) % 11]] - {0, 1, 5, 6}=[[(?{Step}) % 11]] + {0, 1}=[[?{Step}]] + 1]]d[[4 + 2 * {4, 8, 9, 10}=[[(?{Step}) % 11]] + 8 * ({2, 7}=[[(?{Step}) % 11]] * (1 - {-1, 2}=[[?{Step}]]))]]! - [[{-1, 2}>[[?{Step}]] * (3 - (?{Step}))]] + ?{Karma #}d@{KarmaDie}! ]]**}}
 !ammo @{character_id} Karma -?{Karma #}
@@ -1272,7 +1273,8 @@ Ranged Weapons
 --titlefontsize|16px
 --bodyfontsize|12px
 --charid|@{character_id}
---name|**@{Name} @{WeaponName} Damage**
+--name|**@{Name} @{WeaponName}**
+--leftsub|Damage
 --Step|[[ ?{Step|@{DamStep}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
 --Rolled|**[[ [[{1e3, 14}<[[(?{Step}) % 22]] + floor((?{Step}) / 22)]]d20! + [[{0, 1, 1, 2, 6, 10}=[[(?{Step}) % 11]] - {-1, 1}>[[?{Step}]] + floor((?{Step} - 3) / 22)]]d10! + [[{0, 5, 9}=[[(?{Step}) % 11]] + {-1, 2}>[[?{Step}]] + floor((?{Step} - 3) / 22)]]d8! + [[{-1, 8}=[[(?{Step}) % 11]] - {0, 1, 5, 6}=[[(?{Step}) % 11]] + {0, 1}=[[?{Step}]] + 1]]d[[4 + 2 * {4, 8, 9, 10}=[[(?{Step}) % 11]] + 8 * ({2, 7}=[[(?{Step}) % 11]] * (1 - {-1, 2}=[[?{Step}]]))]]! - [[{-1, 2}>[[?{Step}]] * (3 - (?{Step}))]] + ?{Karma #}d@{KarmaDie}! ]]**}}
 !ammo @{character_id} Karma -?{Karma #}
