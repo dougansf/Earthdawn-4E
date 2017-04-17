@@ -10,10 +10,10 @@ This is written to work with the following API scripts:
 - Power Cards 3.4.4 (https://gist.github.com/Sky-Captain-13/452330a3d926b32da49c)
 
 Power Cards will require you to create a Handout named "PowerCard Formats" that is visible to all Players with the following information:
-* blue: --txcolor|#FFFFFF --bgcolor|#1d5dc4
-* green: --txcolor|#FFFFFF --bgcolor|#008000
-* red: --txcolor|#FFFFFF --bgcolor|#d60606
-* grey: --txcolor|#FFFFFF --bgcolor|#444444
-* gold: --txcolor|#FFFFFF --bgcolor|#e58900
+* blue: --bgcolor|#1d5dc4 --txcolor|#FFFFFF --titlefontshadow|none
+* gold: --bgcolor|#e58900 --txcolor|#FFFFFF--titlefontshadow|none
+* green: --bgcolor|#008000 --txcolor|#FFFFFF --titlefontshadow|none
+* grey: --bgcolor|#444444 --txcolor|#FFFFFF--titlefontshadow|none
+* red: --bgcolor|#d60606 --txcolor|#FFFFFF --titlefontshadow|none
 
 You can change the color numbers (#XXXXXX) if you like, but do not change the names (blue, green, etc).
