@@ -17,3 +17,5 @@ Power Cards will require you to create a Handout named "PowerCard Formats" that 
 * red: --bgcolor|#d60606 --txcolor|#FFFFFF --titlefontshadow|none
 
 You can change the color numbers (#XXXXXX) if you like, but do not change the names (blue, green, etc).
+
+When you set up a Token, I recommend setting the bars to track "Wounds," "Karma," and "Uncon" (Damage).
