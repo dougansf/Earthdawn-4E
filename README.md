@@ -16,9 +16,13 @@ When you set up a Token, I recommend setting the bars to track "Wounds," "Karma,
 Power Cards will require you to create a Handout named "PowerCard Formats" that is visible to all Players with the following information:
 
 blue: --bgcolor|#1d5dc4 --txcolor|#FFFFFF --titlefontshadow|none
+
 gold: --bgcolor|#e58900 --txcolor|#FFFFFF--titlefontshadow|none
+
 green: --bgcolor|#008000 --txcolor|#FFFFFF --titlefontshadow|none
+
 grey: --bgcolor|#444444 --txcolor|#FFFFFF--titlefontshadow|none
+
 red: --bgcolor|#d60606 --txcolor|#FFFFFF --titlefontshadow|none
 
 
