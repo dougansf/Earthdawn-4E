@@ -22,5 +22,3 @@ green: --bgcolor|#008000 --txcolor|#FFFFFF --titlefontshadow|none
 grey: --bgcolor|#444444 --txcolor|#FFFFFF--titlefontshadow|none
 
 red: --bgcolor|#d60606 --txcolor|#FFFFFF --titlefontshadow|none
-
-
