@@ -1,4 +1,4 @@
-/*-- ED4 Character Sheet v1.5.1 Last update: 10-09-2017
+/*-- ED4 Character Sheet v1.5.2 Last update: 10-19-2017
 Author: Dougansf --*/
 
 h3 {text-indent: 20px;}
@@ -65,7 +65,7 @@ input {font-size: 90%}
         cursor: pointer;    
     position: relative;
     vertical-align: middle;
-    margin-left: -93px;/*originally 91px*/
+    margin-left: -95px;/*originally 91px*/
 }
 
 /*this modifies the span color once the radio button is selected so you know which tab is selected*/
