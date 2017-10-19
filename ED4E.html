@@ -1,4 +1,4 @@
-<!-- ED4 Character Sheet v1.5.1 Last update: 10-09-2017
+<!-- ED4 Character Sheet v1.5.2 Last update: 10-19-2017
 Author: Dougansf -->
 <table style="width: 730px; height: 50px; background-color: #FFFFFF;" border="5" cellpadding="3">
     <!-- Banner -->
@@ -884,7 +884,7 @@ Author: Dougansf -->
                             <input name="attr_TalentRank" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="TalentAction" name="attr_TalentAction" style= "width: 81px">
+                            <select class="TalentAction" name="attr_TalentAction" style= "width: 90px">
                                 <option value="Free">
                                     Free
                                 </option>
@@ -903,7 +903,7 @@ Author: Dougansf -->
                             <input name="attr_TalentStrain" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="TalentDefense" name="attr_TalentDefense" style= "width: 72px">
+                            <select class="TalentDefense" name="attr_TalentDefense" style= "width: 80px">
                                 <option value="None">
                                     None
                                 </option>
@@ -942,7 +942,6 @@ Author: Dougansf -->
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #f4c542;">
                                 <button name="roll_TalentStepGM" type="roll" value="!power {{
 --whisper|GM
@@ -966,7 +965,6 @@ Author: Dougansf -->
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #004fce;">
                                 <button name="roll_TalentTarget" type="roll" value="!power {{
 --format|gold
@@ -992,7 +990,7 @@ Author: Dougansf -->
                         <td style="vertical-align: top; text-align: center;" rowspan="2">
                                 <input name="attr_TalentDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                                 <strong>+</strong>
-                                <select class="TalentDurationRank" name="attr_TalentDurationRank" style= "width: 53px">
+                                <select class="TalentDurationRank" name="attr_TalentDurationRank" style= "width: 62px">
                                     <option value="0">
                                         Zero
                                     </option>
@@ -1001,8 +999,8 @@ Author: Dougansf -->
                                     </option>
                                 </select>
                                 <strong>=</strong><br/>
-                                <input disabled="disabled" name="attr_TalentDurationTotal" type="number" style="vertical-align: top; width: 41px;" value="@{TalentDurationNumber}+@{TalentDurationRank}">
-                                <select class="TalentDurationIncrement" name="attr_TalentDurationIncrement" style= "width: 70px">
+                                <input disabled="disabled" name="attr_TalentDurationTotal" type="number" style="vertical-align: top; width: 38px;" value="@{TalentDurationNumber}+@{TalentDurationRank}">
+                                <select class="TalentDurationIncrement" name="attr_TalentDurationIncrement" style= "width: 77px">
                                     <option value="Rounds">
                                         Rounds
                                     </option>
@@ -1099,7 +1097,7 @@ Author: Dougansf -->
                             <input name="attr_SkillRank" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="SkillAction" name="attr_SkillAction" style= "width: 81px">
+                            <select class="SkillAction" name="attr_SkillAction" style= "width: 90px">
                                 <option value="Free">
                                     Free
                                 </option>
@@ -1118,7 +1116,7 @@ Author: Dougansf -->
                             <input name="attr_SkillStrain" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="SkillDefense" name="attr_SkillDefense" style= "width: 72px">
+                            <select class="SkillDefense" name="attr_SkillDefense" style= "width: 80px">
                                 <option value="None">
                                     None
                                 </option>
@@ -1157,7 +1155,6 @@ Author: Dougansf -->
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #f4c542;">
                                 <button name="roll_SkillStepGM" type="roll" value="!power {{
 --whisper|GM
@@ -1181,7 +1178,6 @@ Author: Dougansf -->
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #004fce;">
                                 <button name="roll_SkillTarget" type="roll" value="!power {{
 --format|green
@@ -1207,7 +1203,7 @@ Author: Dougansf -->
                         <td style="vertical-align: top; text-align: center;" rowspan="2">
                                 <input name="attr_SkillDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                                 <strong>+</strong>
-                                <select class="SkillDurationRank" name="attr_SkillDurationRank" style= "width: 53px">
+                                <select class="SkillDurationRank" name="attr_SkillDurationRank" style= "width: 62px">
                                     <option value="0">
                                         Zero
                                     </option>
@@ -1216,8 +1212,8 @@ Author: Dougansf -->
                                     </option>
                                 </select>
                                 <strong>=</strong><br/>
-                                <input disabled="disabled" name="attr_SkillDurationTotal" type="number" style="vertical-align: top; width: 41px;" value="@{SkillDurationNumber}+@{SkillDurationRank}">
-                                <select class="SkillDurationIncrement" name="attr_SkillDurationIncrement" style= "width: 70px">
+                                <input disabled="disabled" name="attr_SkillDurationTotal" type="number" style="vertical-align: top; width: 38px;" value="@{SkillDurationNumber}+@{SkillDurationRank}">
+                                <select class="SkillDurationIncrement" name="attr_SkillDurationIncrement" style= "width: 77px">
                                     <option value="Rounds">
                                         Rounds
                                     </option>
@@ -1307,7 +1303,7 @@ Melee Weapons
                             <input name="attr_AtkStep" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="WeaponDefense" name="attr_WeaponDefense" style= "width: 72px">
+                            <select class="WeaponDefense" name="attr_WeaponDefense" style= "width: 80px">
                                 <option value="@{target|PD}">
                                     Physical
                                 </option>
@@ -1369,7 +1365,7 @@ Melee Weapons
                             <input name="attr_DamStep" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="WeaponDamType" name="attr_WeaponDamType" style= "width: 72px">
+                            <select class="WeaponDamType" name="attr_WeaponDamType" style= "width: 80px">
                                 <option value="@{target|PA}">
                                     Physical
                                 </option>
@@ -1504,7 +1500,7 @@ Ranged Weapons
                     <input name="attr_RAtkStep" type="number" value="0" style="width: 41px;"/>
                 </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="RWeaponDefense" name="attr_RWeaponDefense" style= "width: 72px">
+                            <select class="RWeaponDefense" name="attr_RWeaponDefense" style= "width: 80px">
                                 <option value="@{target|PD}">
                                     Physical
                                 </option>
@@ -1566,7 +1562,7 @@ Ranged Weapons
                             <input name="attr_RDamStep" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="RWeaponDamType" name="attr_RWeaponDamType" style= "width: 72px">
+                            <select class="RWeaponDamType" name="attr_RWeaponDamType" style= "width: 80px">
                                 <option value="@{target|PA}">
                                     Physical
                                 </option>
@@ -1815,7 +1811,7 @@ Ranged Weapons
                                     <input name="attr_TIMD" type="number" value="0" style="width: 41px;"/>
                                 </td>
                                 <td style="text-align: center; vertical-align: top; height: 15px" >
-                                    <select class="TITier" style="width: 90px;" name="attr_TITier">
+                                    <select class="TITier" style="width: 100px;" name="attr_TITier">
                                         <option value="Novice">
                                             Novice
                                         </option>
@@ -1975,7 +1971,7 @@ Ranged Weapons
                 <input name="attr_TWRank" type="number" value="0" style="width: 41px;"/>
             </td>
             <td style="text-align: center; width: 130px">
-                <select class="TalentAction" name="attr_TalentAction" style= "width: 81px">
+                <select class="TalentAction" name="attr_TalentAction" style= "width: 90px">
                     <option value="Free">
                         Free
                     </option>
@@ -2066,12 +2062,12 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: center; width: 5%; background-color: #ffa31a;">
+                <td style="vertical-align: bottom; text-align: center; width: 8%; background-color: #ffa31a;">
                     <strong>
                         TYPE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #ffa31a;">
+                <td style="vertical-align: bottom; text-align: left; width: 21%; background-color: #ffa31a;">
                     <strong>
                          SPELL NAME
                     </strong>
@@ -2079,7 +2075,7 @@ Ranged Weapons
                 <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #ffa31a;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 14%">
                     <strong>
                          RANGE
                     </strong>
@@ -2090,7 +2086,7 @@ Ranged Weapons
             </tr>
             <tr style="height: 10px;">
                 <td style="vertical-align: top; text-align: left; background-color: #ffa31a;">
-                    <select class="MatrixType" style="width: 81px;" name="attr_MatrixType">
+                    <select class="MatrixType" style="width: 90px;" name="attr_MatrixType">
                         <option value="Standard">
                             Standard
                         </option>
@@ -2121,7 +2117,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -2129,7 +2125,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -2219,7 +2215,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -2244,7 +2239,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -2272,7 +2266,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -2304,7 +2298,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -2358,20 +2351,20 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 20%; background-color: #bfbfbf;">
                     <strong>
                          SPELL NAME
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 30%; background-color: #bfbfbf;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 16%">
                     <strong>
                          RANGE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 36%" />
+                <td style="vertical-align: bottom; text-align: left; width: 35%" />
                     <input name="attr_SpellRange" type="text" style= "width: 150px"/>
                 </td>
             </tr>
@@ -2392,7 +2385,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -2400,7 +2393,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -2482,7 +2475,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -2507,7 +2499,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -2535,7 +2526,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -2567,7 +2558,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -2601,20 +2591,20 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 20%; background-color: #bfbfbf;">
                     <strong>
                          SPELL NAME
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 30%; background-color: #bfbfbf;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 16%">
                     <strong>
                          RANGE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 36%" />
+                <td style="vertical-align: bottom; text-align: left; width: 35%" />
                     <input name="attr_SpellRange" type="text" style= "width: 150px"/>
                 </td>
             </tr>
@@ -2635,7 +2625,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -2643,7 +2633,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -2725,7 +2715,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -2750,7 +2739,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -2778,7 +2766,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -2810,7 +2798,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -2844,20 +2831,20 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 20%; background-color: #bfbfbf;">
                     <strong>
                          SPELL NAME
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 30%; background-color: #bfbfbf;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 16%">
                     <strong>
                          RANGE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 36%" />
+                <td style="vertical-align: bottom; text-align: left; width: 35%" />
                     <input name="attr_SpellRange" type="text" style= "width: 150px"/>
                 </td>
             </tr>
@@ -2878,7 +2865,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -2886,7 +2873,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -2968,7 +2955,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -2993,7 +2979,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -3021,7 +3006,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -3053,7 +3038,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -3087,20 +3071,20 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 20%; background-color: #bfbfbf;">
                     <strong>
                          SPELL NAME
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 30%; background-color: #bfbfbf;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 16%">
                     <strong>
                          RANGE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 36%" />
+                <td style="vertical-align: bottom; text-align: left; width: 35%" />
                     <input name="attr_SpellRange" type="text" style= "width: 150px"/>
                 </td>
             </tr>
@@ -3121,7 +3105,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -3129,7 +3113,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -3211,7 +3195,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -3236,7 +3219,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -3264,7 +3246,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -3296,7 +3278,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -3330,20 +3311,20 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 20%; background-color: #bfbfbf;">
                     <strong>
                          SPELL NAME
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 30%; background-color: #bfbfbf;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 16%">
                     <strong>
                          RANGE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 36%" />
+                <td style="vertical-align: bottom; text-align: left; width: 35%" />
                     <input name="attr_SpellRange" type="text" style= "width: 150px"/>
                 </td>
             </tr>
@@ -3364,7 +3345,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -3372,7 +3353,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -3454,7 +3435,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -3479,7 +3459,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -3507,7 +3486,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -3539,7 +3518,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -3573,20 +3551,20 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 20%; background-color: #bfbfbf;">
                     <strong>
                          SPELL NAME
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 30%; background-color: #bfbfbf;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 16%">
                     <strong>
                          RANGE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 36%" />
+                <td style="vertical-align: bottom; text-align: left; width: 35%" />
                     <input name="attr_SpellRange" type="text" style= "width: 150px"/>
                 </td>
             </tr>
@@ -3607,7 +3585,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -3615,7 +3593,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -3697,7 +3675,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -3722,7 +3699,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -3750,7 +3726,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -3782,7 +3758,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -3816,20 +3791,20 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 20%; background-color: #bfbfbf;">
                     <strong>
                          SPELL NAME
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 30%; background-color: #bfbfbf;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 16%">
                     <strong>
                          RANGE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 36%" />
+                <td style="vertical-align: bottom; text-align: left; width: 35%" />
                     <input name="attr_SpellRange" type="text" style= "width: 150px"/>
                 </td>
             </tr>
@@ -3850,7 +3825,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -3858,7 +3833,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -3940,7 +3915,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -3965,7 +3939,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -3993,7 +3966,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -4025,7 +3998,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -4059,20 +4031,20 @@ Ranged Weapons
     <table style="width: 725px; height: 100%; background-color: #FFFFFF;" border="5" cellspacing="1" cellpadding="1">
         <tbody>
             <tr style="height: 10px;">
-                <td style="vertical-align: bottom; text-align: left; width: 24%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 20%; background-color: #bfbfbf;">
                     <strong>
                          SPELL NAME
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 25%; background-color: #bfbfbf;">
+                <td style="vertical-align: bottom; text-align: left; width: 30%; background-color: #bfbfbf;">
                     <input name="attr_SpellName" type="text" style= "width: 160px" />
                 </td>
-                <td style="vertical-align: bottom; text-align: right; width: 15%">
+                <td style="vertical-align: bottom; text-align: right; width: 16%">
                     <strong>
                          RANGE
                     </strong>
                 </td>
-                <td style="vertical-align: bottom; text-align: left; width: 36%" />
+                <td style="vertical-align: bottom; text-align: left; width: 35%" />
                     <input name="attr_SpellRange" type="text" style= "width: 150px"/>
                 </td>
             </tr>
@@ -4093,7 +4065,7 @@ Ranged Weapons
                 <td style="vertical-align: top; text-align: left;">
                     <input name="attr_SpellDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                     <strong>+</strong>
-                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 53px">
+                    <select class="SpellDurationRank" name="attr_SpellDurationRank" style= "width: 62px">
                         <option value="0">
                             Zero
                         </option>
@@ -4101,7 +4073,7 @@ Ranged Weapons
                             Rank
                         </option>
                     </select>
-                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 69px">
+                    <select class="SpellDurationIncrement" name="attr_SpellDurationIncrement" style= "width: 77px">
                         <option value="Rounds">
                             Rounds
                         </option>
@@ -4183,7 +4155,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                     <button name="roll_GMSpellDamStep" type="roll" value="!power {{
 --whisper|GM
@@ -4208,7 +4179,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #004fce;">
                         <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -4236,7 +4206,7 @@ Ranged Weapons
                     <strong>WIL +</strong>
                     <input name="attr_SpellDamage" type="number" value="0" style="width: 41px;"/>
                         <strong>/</strong>
-                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 72px">
+                    <select class="SpellDamType" name="attr_SpellDamType" style= "width: 80px">
                         <option value="@{target|PA}">
                             Physical
                         </option>
@@ -4268,7 +4238,6 @@ Ranged Weapons
                     </span>
                     &nbsp;
                     <strong>/</strong>
-                    &nbsp;
                     <span style="background-color: #f4c542;">
                         <button name="roll_GMSpellEffectCard" type="roll" value="!power {{
 --whisper|GM
@@ -4945,7 +4914,7 @@ Ranged Weapons
                             <input name="attr_AtkStep" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="WeaponDefense" name="attr_WeaponDefense" style= "width: 72px">
+                            <select class="WeaponDefense" name="attr_WeaponDefense" style= "width: 80px">
                                 <option value="@{target|PD}">
                                     Physical
                                 </option>
@@ -4981,7 +4950,6 @@ Ranged Weapons
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #f4c542;">
                                 <button name="roll_AtkStepGM" type="roll" value="!power {{
 --whisper|GM
@@ -5005,7 +4973,6 @@ Ranged Weapons
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #004fce;">
                                 <button name="roll_AtkTarget" type="roll" value="!power {{
 --format|grey
@@ -5031,7 +4998,7 @@ Ranged Weapons
                             <input name="attr_DamStep" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="WeaponDamType" name="attr_WeaponDamType" style= "width: 72px">
+                            <select class="WeaponDamType" name="attr_WeaponDamType" style= "width: 80px">
                                 <option value="@{target|PA}">
                                     Physical
                                 </option>
@@ -5064,7 +5031,6 @@ Ranged Weapons
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #f4c542;">
                                 <button name="roll_DamStepGM" type="roll" value="!power {{
 --whisper|GM
@@ -5088,7 +5054,6 @@ Ranged Weapons
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #004fce;">
                                 <button name="roll_DamTarget" type="roll" value="!power {{
 --format|red
@@ -5154,7 +5119,7 @@ Ranged Weapons
                                 RANK
                             </strong>
                         </td>
-                        <td style="vertical-align: bottom; text-align: center; width: 70px">
+                        <td style="vertical-align: bottom; text-align: center; width: 40px">
                             <strong>
                                 ACTION
                             </strong>
@@ -5164,7 +5129,7 @@ Ranged Weapons
                                 STRAIN
                             </strong>
                         </td>
-                        <td style="vertical-align: bottom; text-align: center; width: 70px">
+                        <td style="vertical-align: bottom; text-align: center; width: 74px">
                             <strong>
                                 Vs DEFENSE
                             </strong>
@@ -5191,7 +5156,7 @@ Ranged Weapons
                             <input name="attr_PowerRank" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="PowerAction" name="attr_PowerAction" style= "width: 81px">
+                            <select class="PowerAction" name="attr_PowerAction" style= "width: 90px">
                                 <option value="Free">
                                     Free
                                 </option>
@@ -5210,7 +5175,7 @@ Ranged Weapons
                             <input name="attr_PowerStrain" type="number" value="0" style="width: 41px;"/>
                         </td>
                         <td style="vertical-align: top; text-align: center;">
-                            <select class="PowerDefense" name="attr_PowerDefense" style= "width: 72px">
+                            <select class="PowerDefense" name="attr_PowerDefense" style= "width: 80px">
                                 <option value="None">
                                     None
                                 </option>
@@ -5249,7 +5214,6 @@ Ranged Weapons
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #f4c542;">
                                 <button name="roll_PowerStepGM" type="roll" value="!power {{
 --whisper|GM
@@ -5273,7 +5237,6 @@ Ranged Weapons
                             </span>
                             &nbsp;
                             <strong>/</strong>
-                            &nbsp;
                             <span style="background-color: #004fce;">
                                 <button name="roll_PowerTarget" type="roll" value="!power {{
 --format|gold
@@ -5299,7 +5262,7 @@ Ranged Weapons
                         <td style="vertical-align: top; text-align: center;" rowspan="2">
                                 <input name="attr_PowerDurationNumber" type="number" style="vertical-align: top; width: 41px;" value="0">
                                 <strong>+</strong>
-                                <select class="PowerDurationRank" name="attr_PowerDurationRank" style= "width: 53px">
+                                <select class="PowerDurationRank" name="attr_PowerDurationRank" style= "width: 62px">
                                     <option value="0">
                                         Zero
                                     </option>
@@ -5308,8 +5271,8 @@ Ranged Weapons
                                     </option>
                                 </select>
                                 <strong>=</strong><br/>
-                                <input disabled="disabled" name="attr_PowerDurationTotal" type="number" style="vertical-align: top; width: 41px;" value="@{PowerDurationNumber}+@{PowerDurationRank}">
-                                <select class="PowerDurationIncrement" name="attr_PowerDurationIncrement" style= "width: 70px">
+                                <input disabled="disabled" name="attr_PowerDurationTotal" type="number" style="vertical-align: top; width: 38px;" value="@{PowerDurationNumber}+@{PowerDurationRank}">
+                                <select class="PowerDurationIncrement" name="attr_PowerDurationIncrement" style= "width: 76px">
                                     <option value="Rounds">
                                         Rounds
                                     </option>
