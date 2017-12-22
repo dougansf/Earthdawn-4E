@@ -2168,8 +2168,9 @@ Ranged Weapons
             </td>
             <td style="text-align: center;">
                 Use?
-                <input type='checkbox' name='attr_WFUse' value='@{WFRank}' checked='true' />
-                <input type='checkbox' name='attr_WFSUse' value='1' checked='true' />
+                <input type="checkbox"  name='attr_WFChecked' value='1' checked='true' />
+                <input type='hidden' name='attr_WFUse' value='@{WFRank}*@{WFChecked}'  />
+                <input type='hidden' name='attr_WFSUse' value='1*@{WFChecked}' />
             </td>
             <td style="text-align: center;">
                 <input name="attr_WFRank" type="number" value="0" style="width: 41px;"/>
