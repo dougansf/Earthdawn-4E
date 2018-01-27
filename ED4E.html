@@ -243,7 +243,7 @@ Author: Dougansf -->
 --bodyfontsize|12px
 --charid|@{character_id}
 --name|**@{Name} Initiative**
---Step|[[ ?{Step|@{InitTotal}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
+--Step|[[ ?{Step|@{InitTotal}+@{ActionMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
 --Result|**[[ [TRKR] [[{1e3, 8}<[[{?{Step} - 11, 0}kh1 % 11]] + floor([[{?{Step} - 11, 0}kh1]] / 11)]]d20! + [[{2, 4, 5, 6, 7}=[[{?{Step}, 0}kh1 % 11]] + {1, 3}=[[{?{Step}, 0}kh1]] + {1e3, 3}=[[{?{Step} - 11, 0}kh1 % 11]] * 2]]d[[{{(?{Step} - 1) * 2, 4}kh1, {12} }kl1]]! + [[{1e3, 8}<[[{?{Step}, 0}kh1]] * (1 - {3, 6, 10}=[[{?{Step}, 0}kh1 % 11]] + {1, 4, 8}=[[{?{Step}, 0}kh1 % 11]])]]d[[10 - {4, 5, 8, 9}=[[{?{Step}, 0}kh1 % 11]] * 4]]! + [[{1e3, 8}<[[{?{Step}, 0}kh1]] * ({0, 5, 7, 9}=[[{?{Step}, 1}kh1 % 11]] + 2 * {6, 10}=[[{?{Step}, 0}kh1 % 11]])]]d8! - [[{1, 2}=[[{?{Step}, 0}kh1]] * (3 - [[{?{Step}, 0}kh1]])]] + [?{Karma #|0} Karma] [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep} - 11, 0}kh1 % 11]] + floor([[{@{KarmaStep} - 11, 0}kh1]] / 11))]]d20! + [[?{Karma #} * ({2, 4, 5, 6, 7}=[[{@{KarmaStep}, 0}kh1 % 11]] + {1, 3}=[[{@{KarmaStep}, 0}kh1]] + {1e3, 3}=[[{@{KarmaStep} - 11, 0}kh1 % 11]] * 2)]]d[[{{(@{KarmaStep} - 1) * 2, 4}kh1, {12} }kl1]]! + [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep}, 0}kh1]] * (1 - {3, 6, 10}=[[{@{KarmaStep}, 0}kh1 % 11]] + {1, 4, 8}=[[{@{KarmaStep}, 0}kh1 % 11]]))]]d[[10 - {4, 5, 8, 9}=[[{@{KarmaStep}, 0}kh1 % 11]] * 4]]! + [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep}, 0}kh1]] * ({0, 5, 7, 9}=[[{@{KarmaStep}, 1}kh1 % 11]] + 2 * {6, 10}=[[{@{KarmaStep}, 0}kh1 % 11]]))]]d8! - [[?{Karma #} * ({1, 2}=[[{@{KarmaStep}, 0}kh1]] * (3 - [[{@{KarmaStep}, 0}kh1]]))]] ]]**
 }}
 !modattr {{
@@ -869,7 +869,7 @@ Author: Dougansf -->
 --bodyfontsize|12px
 --charid|@{character_id}
 --name|**@{Name} Initiative**
---Step|[[ ?{Step|@{InitTotal}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
+--Step|[[ ?{Step|@{InitTotal}+@{ActionMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
 --Result|**[[ [TRKR] [[{1e3, 8}<[[{?{Step} - 11, 0}kh1 % 11]] + floor([[{?{Step} - 11, 0}kh1]] / 11)]]d20! + [[{2, 4, 5, 6, 7}=[[{?{Step}, 0}kh1 % 11]] + {1, 3}=[[{?{Step}, 0}kh1]] + {1e3, 3}=[[{?{Step} - 11, 0}kh1 % 11]] * 2]]d[[{{(?{Step} - 1) * 2, 4}kh1, {12} }kl1]]! + [[{1e3, 8}<[[{?{Step}, 0}kh1]] * (1 - {3, 6, 10}=[[{?{Step}, 0}kh1 % 11]] + {1, 4, 8}=[[{?{Step}, 0}kh1 % 11]])]]d[[10 - {4, 5, 8, 9}=[[{?{Step}, 0}kh1 % 11]] * 4]]! + [[{1e3, 8}<[[{?{Step}, 0}kh1]] * ({0, 5, 7, 9}=[[{?{Step}, 1}kh1 % 11]] + 2 * {6, 10}=[[{?{Step}, 0}kh1 % 11]])]]d8! - [[{1, 2}=[[{?{Step}, 0}kh1]] * (3 - [[{?{Step}, 0}kh1]])]] + [?{Karma #|0} Karma] [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep} - 11, 0}kh1 % 11]] + floor([[{@{KarmaStep} - 11, 0}kh1]] / 11))]]d20! + [[?{Karma #} * ({2, 4, 5, 6, 7}=[[{@{KarmaStep}, 0}kh1 % 11]] + {1, 3}=[[{@{KarmaStep}, 0}kh1]] + {1e3, 3}=[[{@{KarmaStep} - 11, 0}kh1 % 11]] * 2)]]d[[{{(@{KarmaStep} - 1) * 2, 4}kh1, {12} }kl1]]! + [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep}, 0}kh1]] * (1 - {3, 6, 10}=[[{@{KarmaStep}, 0}kh1 % 11]] + {1, 4, 8}=[[{@{KarmaStep}, 0}kh1 % 11]]))]]d[[10 - {4, 5, 8, 9}=[[{@{KarmaStep}, 0}kh1 % 11]] * 4]]! + [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep}, 0}kh1]] * ({0, 5, 7, 9}=[[{@{KarmaStep}, 1}kh1 % 11]] + 2 * {6, 10}=[[{@{KarmaStep}, 0}kh1 % 11]]))]]d8! - [[?{Karma #} * ({1, 2}=[[{@{KarmaStep}, 0}kh1]] * (3 - [[{@{KarmaStep}, 0}kh1]]))]] ]]**
 }}
 !modattr {{
@@ -5500,7 +5500,7 @@ Ranged Weapons
 --bodyfontsize|12px
 --charid|@{character_id}
 --name|**@{Name} Initiative**
---Step|[[ ?{Step|@{InitTotal}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
+--Step|[[ ?{Step|@{InitTotal}+@{ActionMod}-@{Wounds}} ]] + [[ ?{Karma #|0} ]] Karma, [[ ?{Strain #|0} ]] Strain
 --Result|**[[ [TRKR] [[{1e3, 8}<[[{?{Step} - 11, 0}kh1 % 11]] + floor([[{?{Step} - 11, 0}kh1]] / 11)]]d20! + [[{2, 4, 5, 6, 7}=[[{?{Step}, 0}kh1 % 11]] + {1, 3}=[[{?{Step}, 0}kh1]] + {1e3, 3}=[[{?{Step} - 11, 0}kh1 % 11]] * 2]]d[[{{(?{Step} - 1) * 2, 4}kh1, {12} }kl1]]! + [[{1e3, 8}<[[{?{Step}, 0}kh1]] * (1 - {3, 6, 10}=[[{?{Step}, 0}kh1 % 11]] + {1, 4, 8}=[[{?{Step}, 0}kh1 % 11]])]]d[[10 - {4, 5, 8, 9}=[[{?{Step}, 0}kh1 % 11]] * 4]]! + [[{1e3, 8}<[[{?{Step}, 0}kh1]] * ({0, 5, 7, 9}=[[{?{Step}, 1}kh1 % 11]] + 2 * {6, 10}=[[{?{Step}, 0}kh1 % 11]])]]d8! - [[{1, 2}=[[{?{Step}, 0}kh1]] * (3 - [[{?{Step}, 0}kh1]])]] + [?{Karma #|0} Karma] [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep} - 11, 0}kh1 % 11]] + floor([[{@{KarmaStep} - 11, 0}kh1]] / 11))]]d20! + [[?{Karma #} * ({2, 4, 5, 6, 7}=[[{@{KarmaStep}, 0}kh1 % 11]] + {1, 3}=[[{@{KarmaStep}, 0}kh1]] + {1e3, 3}=[[{@{KarmaStep} - 11, 0}kh1 % 11]] * 2)]]d[[{{(@{KarmaStep} - 1) * 2, 4}kh1, {12} }kl1]]! + [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep}, 0}kh1]] * (1 - {3, 6, 10}=[[{@{KarmaStep}, 0}kh1 % 11]] + {1, 4, 8}=[[{@{KarmaStep}, 0}kh1 % 11]]))]]d[[10 - {4, 5, 8, 9}=[[{@{KarmaStep}, 0}kh1 % 11]] * 4]]! + [[?{Karma #} * ({1e3, 8}<[[{@{KarmaStep}, 0}kh1]] * ({0, 5, 7, 9}=[[{@{KarmaStep}, 1}kh1 % 11]] + 2 * {6, 10}=[[{@{KarmaStep}, 0}kh1 % 11]]))]]d8! - [[?{Karma #} * ({1, 2}=[[{@{KarmaStep}, 0}kh1]] * (3 - [[{@{KarmaStep}, 0}kh1]]))]] ]]**
 }}
 !modattr {{
